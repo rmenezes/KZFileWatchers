@@ -13,7 +13,7 @@ public extension FileWatcher {
     /**
      Watcher for local files, it uses content diffing.
      */
-    public final class Local: FileWatcherProtocol {
+    final class Local: FileWatcherProtocol {
         private typealias CancelBlock = () -> Void
         
         private enum State {
