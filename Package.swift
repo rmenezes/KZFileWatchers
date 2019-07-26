@@ -3,6 +3,10 @@ import PackageDescription
 
 let package = Package(
     name: "KZFileWatchers",
+    products: [
+            .library(name: "KZFileWatchers",
+                     targets: ["KZFileWatchers"]),
+        ],
     targets: [
         .target(name: "KZFileWatchers",
                 path: "KZFileWatchers")
